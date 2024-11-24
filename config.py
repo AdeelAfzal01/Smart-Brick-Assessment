@@ -6,3 +6,6 @@ LABELENCODER_COLUMNS = ['nearest_landmark_en', 'transaction_subtype_en', 'proper
 ROOMSEN_COLUMN = 'rooms_en'
 TRANSACTIONDATETIME_COLUMN = "transaction_datetime"
 REMOVEOUTLIER_COLUMNS = ["amount", "transaction_age_in_days"]
+SCALINGFEATURES_COLUMNS = LABELENCODER_COLUMNS + ['rooms_en', 'transaction_age_in_days'] 
+TARGET_COLUMN = "amount"
+
